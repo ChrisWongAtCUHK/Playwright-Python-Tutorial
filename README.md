@@ -14,3 +14,6 @@ pytest --headed --base-url https://www.saucedemo.com/ --tracing on
 playwright show-trace test-results/test-saucedemo-py-test-title-chromium/trace.zip
 playwright k-trace test-results/test-saucedemo-py-test-inventory-site-chromium/trace.zip
 ```
+```
+pytest --headed --base-url https://www.saucedemo.com/ --browser firefox --browser chromium --headed --slowmo 1000 --tracing on
+```
