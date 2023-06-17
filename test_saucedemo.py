@@ -1,7 +1,7 @@
 from playwright.sync_api import Page
 import pytest
 
-@pytest.mark.skip_browser('chromium')
+@pytest.mark.only_browser('chromium')
 def test_title(page: Page):
     page.goto('/')
     assert page.title() == 'Swag Labs'
