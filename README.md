@@ -9,3 +9,8 @@ pytest --headed --base-url https://www.saucedemo.com/ --browser chromium --brows
 ```
 pytest --headed --base-url https://www.saucedemo.com/ --browser-channel chrome
 ```
+```
+pytest --headed --base-url https://www.saucedemo.com/ --tracing on
+playwright show-trace test-results/test-saucedemo-py-test-title-chromium/trace.zip
+playwright k-trace test-results/test-saucedemo-py-test-inventory-site-chromium/trace.zip
+```
