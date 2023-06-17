@@ -3,3 +3,6 @@
 ```
 pytest --headed --base-url https://www.saucedemo.com/
 ```
+```
+pytest --headed --base-url https://www.saucedemo.com/ --browser chromium --browser firefox
+```
