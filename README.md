@@ -19,3 +19,7 @@ pytest --headed --base-url https://www.saucedemo.com/ --browser firefox --browse
 ```
 
 ## [Automated TEST generated with PLAYWRIGHT + PYTHON. IS IT POSSIBLE? 💡](https://www.youtube.com/watch?v=IRTeqUXkPbA&list=PLYDwWPRvXB8_W56h2C1z5zrlnAlvqpJ6A&index=3)
+https://playwright.dev/python/docs/codegen#emulate-devices
+```
+playwright codegen --device="iPhone 13" https://www.saucedemo.com
+```
