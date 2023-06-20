@@ -17,3 +17,5 @@ playwright k-trace test-results/test-saucedemo-py-test-inventory-site-chromium/t
 ```
 pytest --headed --base-url https://www.saucedemo.com/ --browser firefox --browser chromium --headed --slowmo 1000 --tracing on
 ```
+
+## [Automated TEST generated with PLAYWRIGHT + PYTHON. IS IT POSSIBLE? 💡](https://www.youtube.com/watch?v=IRTeqUXkPbA&list=PLYDwWPRvXB8_W56h2C1z5zrlnAlvqpJ6A&index=3)
