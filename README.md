@@ -23,3 +23,5 @@ https://playwright.dev/python/docs/codegen#emulate-devices
 ```
 playwright codegen --device="iPhone 13" https://www.saucedemo.com
 ```
+
+## [Playwright + Python: Automated UI Actions & Validations](https://www.youtube.com/watch?v=uX4pehDO4i4&list=PLYDwWPRvXB8_W56h2C1z5zrlnAlvqpJ6A&index=4)
