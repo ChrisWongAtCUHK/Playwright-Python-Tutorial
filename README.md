@@ -12,7 +12,7 @@ pytest --headed --base-url https://www.saucedemo.com/ --browser-channel chrome
 ```
 pytest --headed --base-url https://www.saucedemo.com/ --tracing on
 playwright show-trace test-results/test-saucedemo-py-test-title-chromium/trace.zip
-playwright k-trace test-results/test-saucedemo-py-test-inventory-site-chromium/trace.zip
+playwright show-trace test-results/test-saucedemo-py-test-inventory-site-chromium/trace.zip
 ```
 ```
 pytest --headed --base-url https://www.saucedemo.com/ --browser firefox --browser chromium --headed --slowmo 1000 --tracing on
@@ -25,3 +25,5 @@ playwright codegen --device="iPhone 13" https://www.saucedemo.com
 ```
 
 ## [Playwright + Python: Automated UI Actions & Validations](https://www.youtube.com/watch?v=uX4pehDO4i4&list=PLYDwWPRvXB8_W56h2C1z5zrlnAlvqpJ6A&index=4)
+* [650](https://youtu.be/uX4pehDO4i4?list=PLYDwWPRvXB8_W56h2C1z5zrlnAlvqpJ6A&t=675)
+* [1310](https://youtu.be/uX4pehDO4i4?list=PLYDwWPRvXB8_W56h2C1z5zrlnAlvqpJ6A&t=1310)

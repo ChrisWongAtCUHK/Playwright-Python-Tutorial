@@ -1,7 +1,3 @@
-# run: 
-#   $ python3 checkboxes.py
-#   $ playwright show-trace logs/trace.zip
-
 import asyncio
 
 from playwright.async_api import Playwright, async_playwright, expect
@@ -10,15 +6,16 @@ from playwright.async_api import Playwright, async_playwright, expect
 async def run(playwright: Playwright) -> None:
     browser = await playwright.chromium.launch(headless=False)
     context = await browser.new_context()
+    
     await context.tracing.start(screenshots=True, snapshots=True, sources=True)
     page = await context.new_page()
-    await page.goto("https://demoqa.com/checkbox")
+    
+    await page.set_viewport_size({"width": 1000, "height": 1200 })
+    await page.goto("https://demoqa.com/select-menu")
+    await page.locator("#cars").select_option(["volvo", "saab", "opel"])
 
-    await page.locator("#tree-node svg").nth(3).click()
-    await page.screenshot(path="screenshots/checkboxes.png")
-
-    await expect(page.locator("#result")).to_have_text("You have selected :homedesktopnotescommandsdocumentsworkspacereactangularveuofficepublicprivateclassifiedgeneraldownloadswordFileexcelFile")
-    await context.tracing.stop(path="logs/trace.zip")
+    await page.screenshot(path="screenshots/options.png")
+    await context.tracing.stop(path="logs/options.zip") 
 
     # ---------------------
     await context.close()
